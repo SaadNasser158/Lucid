@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Spot — Learn Your Mind's Bugs</title>
+    <link rel="icon" type="image/png" href="blindspot.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', 'Segoe UI', Roboto, sans-serif;
+            background: #fff;
+            color: #000;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 0 60px;
+        }
+
+        .hero img {
+            width: 120px;
+            height: 120px;
+            border-radius: 27px;
+            margin-bottom: 32px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+
+        .hero .tagline {
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+
+        .hero .description {
+            font-size: 17px;
+            color: rgba(0, 0, 0, 0.7);
+            max-width: 480px;
+            margin: 0 auto 40px;
+        }
+
+        .app-store-badge {
+            display: inline-block;
+        }
+
+        .app-store-badge img {
+            height: 54px;
+            width: auto;
+            border-radius: 0;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .feature {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .feature:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature h3 {
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(0, 0, 0, 0.4);
+            margin-bottom: 12px;
+        }
+
+        .feature p {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        /* Nav */
+        nav {
+            padding: 40px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        /* Legal Pages */
+        .legal {
+            padding: 60px 0;
+            display: none;
+        }
+
+        .legal.active {
+            display: block;
+        }
+
+        .legal h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .legal .updated {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 48px;
+        }
+
+        .legal h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+
+        .legal p {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.75);
+            margin-bottom: 16px;
+        }
+
+        .legal a {
+            color: #000;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            font-size: 15px;
+            color: rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        footer p {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        footer a {
+            color: rgba(0, 0, 0, 0.6);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Page -->
+    <div id="home">
+        <div class="container">
+            <section class="hero">
+                <img src="blindspot.png" alt="Blind Spot App Icon">
+                <h1>Blind Spot</h1>
+                <p class="tagline">Your mind has bugs. Learn them.</p>
+                <p class="description">
+                    One cognitive bias per day. For 365 days. Then this app deletes itself.
+                    No ads, no tracking, no noise — just pure content that makes you think.
+                </p>
+                <a href="#" class="app-store-badge">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+                </a>
+            </section>
+
+            <section class="features">
+                <div class="feature">
+                    <h3>Daily Learning</h3>
+                    <p>A new cognitive bias every day</p>
+                </div>
+                <div class="feature">
+                    <h3>365 Days</h3>
+                    <p>One year of discovering your blind spots</p>
+                </div>
+                <div class="feature">
+                    <h3>Then It's Gone</h3>
+                    <p>Some things are better because they end</p>
+                </div>
+            </section>
+
+            <nav>
+                <ul>
+                    <li><a href="#privacy" onclick="showPage('privacy')">Privacy Policy</a></li>
+                    <li><a href="#terms" onclick="showPage('terms')">Terms of Service</a></li>
+                    <li><a href="mailto:Alotaibi.saad158@gmail.com">Contact</a></li>
+                </ul>
+            </nav>
+
+            <footer>
+                <p>Made by <a href="https://x.com/soCostanza">Saad</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Privacy Policy -->
+    <div id="privacy" class="legal">
+        <div class="container">
+            <a href="#" class="back-link" onclick="showPage('home')">← Back</a>
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated: February 2026</p>
+
+            <h2>The Short Version</h2>
+            <p>I don't collect your data. Everything stays on your device.</p>
+
+            <h2>What I Collect</h2>
+            <p>Nothing. Zero. Nada.</p>
+            <p>I don't collect personal information, usage data, analytics, or anything else. Your progress through the 365 biases is stored locally on your device and never leaves it.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>Blind Spot doesn't use any third-party analytics, tracking, or advertising services.</p>
+
+            <h2>Contact</h2>
+            <p>Questions? Reach out at <a href="mailto:Alotaibi.saad158@gmail.com">Alotaibi.saad158@gmail.com</a></p>
+
+            <nav style="margin-top: 60px;">
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#terms" onclick="showPage('terms')">Terms of Service</a></li>
+                </ul>
+            </nav>
+
+            <footer>
+                <p>Made by <a href="https://x.com/soCostanza">Saad</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Terms of Service -->
+    <div id="terms" class="legal">
+        <div class="container">
+            <a href="#" class="back-link" onclick="showPage('home')">← Back</a>
+            <h1>Terms of Service</h1>
+            <p class="updated">Last updated: February 2026</p>
+
+            <h2>The Short Version</h2>
+            <p>Use Blind Spot to learn about cognitive biases. Don't do anything illegal with it. That's pretty much it.</p>
+
+            <h2>The App</h2>
+            <p>Blind Spot provides educational content about cognitive biases. The app is designed to run for 365 days from your first use, after which it will no longer display new content.</p>
+
+            <h2>Your Responsibility</h2>
+            <p>The content is for educational purposes only. I'm not responsible for any decisions you make based on what you learn here. You're a grown-up. Think for yourself.</p>
+
+            <h2>Intellectual Property</h2>
+            <p>The app design, text, and content are mine. Don't copy or redistribute them without permission.</p>
+
+            <h2>Changes</h2>
+            <p>I might update these terms occasionally. If I do, the new terms will be reflected here.</p>
+
+            <h2>Contact</h2>
+            <p>Questions? Reach out at <a href="mailto:Alotaibi.saad158@gmail.com">Alotaibi.saad158@gmail.com</a></p>
+
+            <nav style="margin-top: 60px;">
+                <ul>
+                    <li><a href="#" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#privacy" onclick="showPage('privacy')">Privacy Policy</a></li>
+                </ul>
+            </nav>
+
+            <footer>
+                <p>Made by <a href="https://x.com/soCostanza">Saad</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('privacy').style.display = 'none';
+            document.getElementById('terms').style.display = 'none';
+
+            // Show selected page
+            const page = document.getElementById(pageId);
+            if (pageId === 'home') {
+                page.style.display = 'block';
+            } else {
+                page.style.display = 'block';
+                page.classList.add('active');
+            }
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+
+            // Update URL without reload
+            if (pageId === 'home') {
+                history.pushState(null, '', '/');
+            } else {
+                history.pushState(null, '', '#' + pageId);
+            }
+        }
+
+        // Handle direct links and back button
+        window.addEventListener('load', function() {
+            const hash = window.location.hash.replace('#', '');
+            if (hash === 'privacy' || hash === 'terms') {
+                showPage(hash);
+            }
+        });
+
+        window.addEventListener('popstate', function() {
+            const hash = window.location.hash.replace('#', '');
+            if (hash === 'privacy' || hash === 'terms') {
+                showPage(hash);
+            } else {
+                showPage('home');
+            }
+        });
+    </script>
+</body>
+</html>
